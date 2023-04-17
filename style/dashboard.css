@@ -105,8 +105,10 @@ body{
 .wrapper .main_content .header{
   padding: 20px;
   background: #fff;
-  color: #717171;
+  color: #000000;
+  margin-left: 10px;
   border-bottom: 1px solid #e0e4e8;
+  display: flex;
 }
 
 .wrapper .main_content .info{
@@ -125,4 +127,236 @@ body{
   }
 }
 
+/* statistics css */
 
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;300;700&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Anek Bangla', sans-serif;
+  background-color: #f7f8fc;
+} */
+
+/* section {
+  min-height: 100vh;
+  margin: 0 30px;
+} */
+
+.container {
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 50px;
+  height: 40vh;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 350px;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 101%;
+  height: 110%;
+  background-image: linear-gradient(to right bottom, #bcd1eb, #d0dfee);
+  z-index: -1;
+  border-radius: 15px;
+  transform: rotate(-5deg);
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, .2);
+}
+.card li {
+  width: 40%;
+  margin: 10px 0;
+}
+
+.card li p {
+  display: flex;
+}
+
+.card li h3 {
+  display: inline-block;
+  font-size: 1rem;
+  color: #333;
+  vertical-align: top;
+  margin-right: 2px;
+  line-height: 1.2;
+}
+.card li .fa {
+  font-size: .75rem;
+}
+.card li span {
+  color: #9ea6a8;
+  font-weight: bold;
+  font-size: .55rem;
+}
+
+
+.clr-up {
+  color: green;
+}
+
+.clr-down {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .card::before {
+    top: -10px;
+    left: -2px;
+  }
+  .card li {
+    width: 100%;
+  }
+  .card li:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}
+
+/* gfghjkl; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+.articles {
+  background-color: white;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px;
+  position: relative;
+  border-radius: 10px;
+  margin-left: 9%;
+}
+
+.articles__close {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.articles h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #100e21;
+}
+
+.articles span {
+  color: #100e21;
+  margin-bottom: 30px;
+}
+
+.articles__list {
+  padding-left: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles__list > li {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #dedee9;
+}
+
+.articles__list > li + li {
+  margin-top: 10px;
+}
+
+.articles__list > li a {
+  text-decoration: none;
+}
+
+.articles__list > li a h2 {
+  margin: 0px;
+  color:rgb(233, 160, 105);
+  font-size: medium;
+}
+
+.articles__list .list__footer {
+  padding-left: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.articles__list .list__footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles__list .list__footer li span {
+  margin-bottom: 0px;
+  margin-left: 5px;
+  line-height: 17px;
+  color: #100e21;
+  font-size: 100x;
+  font-weight: 100;
+}
+
+.articles__list .list__footer li + li {
+  margin-left: 30px;
+}
+
+.articles__list .list__footer li i {
+  font-size: 17px;
+}
+
+/* Scroll */
+  /* Scrollbar */
+  body::-webkit-scrollbar {
+    width: 0.3em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    outline: 1px solid rgb(233, 160, 105);
+  }
