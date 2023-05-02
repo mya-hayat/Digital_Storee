@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style/profile.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="style/dashboard.css">
+    <script src="https://kit.fontawesome.com/46a02c0f3f.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <h2><div class="company-logo">Digital Store</div></h2> 
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="customers.html"><i class="fas fa-address-card"></i>Customers</a></li>
+                <li><a href="products.html"><i class="fas fa-project-diagram"></i>Products</a></li>
+                <li><a href="orders.html"><i class="fas fa-blog"></i>Orders</a></li>
+                <li><a href="index.html" style="color: red;font-size: medium;"><i class="fa-solid fa-right-from-bracket" style="color: red;"></i> Logout</a></li>
+            </ul> 
+            <!-- <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div> -->
+        </div>
+
+        <div class="main_content">
+            <div class="header">Welcome!! Have a nice day.</div>  
+            <section class="modify-profile">
+                <form action="">
+                    <h1>Edit my profile</h1>
+                    <div class="form-container">
+                        <div class="form-block">
+                            <div class="form-item">
+                                <div class="lastname">
+                                    <label for="lastname">First Name</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="MYA">
+                                </div>
+                                <div class="firstname">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" name="firstname" id="firstname" placeholder="Hayat">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="myaHayat@gmail.com">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Phine Number</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="+212612063455">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="email">
+                                    <label for="email">Password</label>
+                                    <input type="password" name="email" id="email" placeholder="New password">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Confirm Password</label>
+                                    <input type="password" name="phone" id="phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn-save" type="button" value="Save my changes">
+                </form>
+            </section>
+        </div>
+</body>
+</html>
+
